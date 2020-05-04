@@ -1,0 +1,10 @@
+{
+  "name": "NBP Currency",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {"48": "nbp.png"},
+  "browser_action": {
+      "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'sha256-8mPpSgVjVBMkmQLBgUM2lh/4FEJOCit3dV3e6kzdG6w='; object-src 'self'"
+}
