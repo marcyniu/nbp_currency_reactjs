@@ -21,14 +21,14 @@ class Nbp {
     };
 
 
-    sendRequest = (query) => {
-        return fetch(query)
-            .then(response => {
-                return response.json();
-            })
-            .catch(err => {
-                console.log(err);
-            });
+    sendRequest = async (query) => {
+        try {
+            const response = await fetch(query);
+            return response.json();
+        }
+        catch (err) {
+            console.log(err);
+        }
     };
 }
 

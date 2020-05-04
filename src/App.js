@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Nbp from './Nbp.js';
+import Table from './Table.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//var table = 'test';
+//console.log(table);
+
+class App extends Component {
+
+  state = {
+    slogan: 'Click the button to upload data.',
+    data: []
+  }
+
+  render() {
+    const { slogan, data } = this.state;
+
+    return (
+      <div className="App">
+        
+        <p>{slogan}</p>
+        
+        <br/>
+        <br/>
+        
+        <button onClick={() => this.changeTable()}>Change</button>
+        
+        <br/>
+        <br/>
+
+        <Table /> 
+      </div>    
+    );
+  }
+
+  changeTable = () => {
+
+    this.setState({
+        slogan: 'Uploading data...',
+    })
+
+    var nbp = new Nbp();
+    var promise = nbp.getLastCurrencyTable('A')
+    promise.then(resp => {
+        this.setState({data: resp[0].rates});
+        this.setState({slogan: 'Data uploaded!!!'});
+    });
+  }
 }
 
 export default App;
