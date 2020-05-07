@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/nbp_currency_reactjs/static/css/main.d1b05096.chunk.css",
-    "main.js": "/nbp_currency_reactjs/static/js/main.73f0b860.chunk.js",
-    "main.js.map": "/nbp_currency_reactjs/static/js/main.73f0b860.chunk.js.map",
+    "main.css": "/nbp_currency_reactjs/static/css/main.16e18a48.chunk.css",
+    "main.js": "/nbp_currency_reactjs/static/js/main.e24c951f.chunk.js",
+    "main.js.map": "/nbp_currency_reactjs/static/js/main.e24c951f.chunk.js.map",
     "runtime-main.js": "/nbp_currency_reactjs/static/js/runtime-main.a10fcbde.js",
     "runtime-main.js.map": "/nbp_currency_reactjs/static/js/runtime-main.a10fcbde.js.map",
-    "static/js/2.139a4541.chunk.js": "/nbp_currency_reactjs/static/js/2.139a4541.chunk.js",
-    "static/js/2.139a4541.chunk.js.map": "/nbp_currency_reactjs/static/js/2.139a4541.chunk.js.map",
+    "static/css/2.69121389.chunk.css": "/nbp_currency_reactjs/static/css/2.69121389.chunk.css",
+    "static/js/2.393fdd6f.chunk.js": "/nbp_currency_reactjs/static/js/2.393fdd6f.chunk.js",
+    "static/js/2.393fdd6f.chunk.js.map": "/nbp_currency_reactjs/static/js/2.393fdd6f.chunk.js.map",
     "index.html": "/nbp_currency_reactjs/index.html",
-    "precache-manifest.d24f5f992714c0965381fa48d2b18a27.js": "/nbp_currency_reactjs/precache-manifest.d24f5f992714c0965381fa48d2b18a27.js",
+    "precache-manifest.d390f57c05861875210e3721ea9f91c0.js": "/nbp_currency_reactjs/precache-manifest.d390f57c05861875210e3721ea9f91c0.js",
     "service-worker.js": "/nbp_currency_reactjs/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/nbp_currency_reactjs/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.139a4541.chunk.js.LICENSE.txt": "/nbp_currency_reactjs/static/js/2.139a4541.chunk.js.LICENSE.txt"
+    "static/css/2.69121389.chunk.css.map": "/nbp_currency_reactjs/static/css/2.69121389.chunk.css.map",
+    "static/css/main.16e18a48.chunk.css.map": "/nbp_currency_reactjs/static/css/main.16e18a48.chunk.css.map",
+    "static/js/2.393fdd6f.chunk.js.LICENSE.txt": "/nbp_currency_reactjs/static/js/2.393fdd6f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a10fcbde.js",
-    "static/js/2.139a4541.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.73f0b860.chunk.js"
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.393fdd6f.chunk.js",
+    "static/css/main.16e18a48.chunk.css",
+    "static/js/main.e24c951f.chunk.js"
   ]
 }
