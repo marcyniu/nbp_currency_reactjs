@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Nbp from './Nbp.js';
 import Table from './Table.js';
-
-//var table = 'test';
-//console.log(table);
+import { Button } from 'react-bootstrap';
 
 class App extends Component {
 
   state = {
-    slogan: 'Click the button to upload data.',
-    data: []
+    displayTable: false
   }
 
   render() {
@@ -18,34 +14,20 @@ class App extends Component {
 
     return (
       <div className="App">
-        
-        <p>{slogan}</p>
-        
-        <br/>
         <br/>
         
-        <button onClick={() => this.changeTable()}>Change</button>
+        <Button variant="primary" onClick={() => this.changeTable()}>Table A - latest [{!this.state.displayTable && <span>on</span>}{this.state.displayTable && <span>off</span>}]</Button>
         
         <br/>
         <br/>
 
-        <Table /> 
+        {this.state.displayTable &&<Table />} 
       </div>    
     );
   }
 
   changeTable = () => {
-
-    this.setState({
-        slogan: 'Uploading data...',
-    })
-
-    var nbp = new Nbp();
-    var promise = nbp.getLastCurrencyTable('A')
-    promise.then(resp => {
-        this.setState({data: resp[0].rates});
-        this.setState({slogan: 'Data uploaded!!!'});
-    });
+      this.setState({ displayTable: !this.state.displayTable });
   }
 }
 

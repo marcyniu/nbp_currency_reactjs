@@ -5,10 +5,6 @@ class Nbp {
     
     //constructor() {};
 
-    something = () => {
-        console.log('This is something method.');
-    };
-
     /**
      *  
      *  variable: table - course table type (A, B, or C)
